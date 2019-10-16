@@ -4,6 +4,7 @@ Build script for rstudio-server on:
 * Lenovo C630 Yoga 
 * Windows 10 Insider Build Fast Ring `Microsoft Windows [Version 10.0.18999.1]`
 * WSL 1 (WSL 2 doesn't work on Windows 10 ARM64 ! Except for I guess :-) The Samsung Book 2 and the future Surface X
+* Ubuntu 18.04.2 LTS
 
 This is built on the excellent work of [jrowen/ARM-rstudio-server](https://github.com/jrowen/ARM-rstudio-server) which was built on the excellent work of [dashaub/ARM-RStudio](https://github.com/dashaub/ARM-RStudio).
 
