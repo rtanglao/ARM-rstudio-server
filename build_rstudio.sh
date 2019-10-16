@@ -6,7 +6,7 @@ sudo apt-get update
 sudo apt-get install -y r-base r-base-dev
 
 # Set RStudio version
-VERS=v0.99.473
+VERS=v1.2.5001
 
 # Download RStudio source
 cd ~/Downloads/
@@ -16,9 +16,9 @@ tar xvf ~/Downloads/$VERS -C ~/Downloads/rstudio-$VERS --strip-components 1
 rm ~/Downloads/$VERS
 
 # Run environment preparation scripts
-sudo apt-get install -y openjdk-7-jdk
+sudo apt-get install -y openjdk-8-jdk
 cd ~/Downloads/rstudio-$VERS/dependencies/linux/
-./install-dependencies-debian --exclude-qt-sdk
+./install-dependencies-bionic --exclude-qt-sdk
 
 # Run common environment preparation scripts
 sudo apt-get install -y git
@@ -68,7 +68,7 @@ export LANGUAGE=en_US.UTF-8
 #echo 'export LANGUAGE=en_US.UTF-8' >> ~/.bashrc
 
 # Clean the system of packages used for building
-sudo apt-get autoremove -y cabal-install ghc openjdk-7-jdk pandoc libboost-all-dev
+sudo apt-get autoremove -y cabal-install ghc openjdk-8-jdk pandoc libboost-all-dev
 sudo rm -r -f ~/Downloads/rstudio-$VERS
 sudo apt-get autoremove -y
 
